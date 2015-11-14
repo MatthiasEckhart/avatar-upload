@@ -1,8 +1,8 @@
 Package.describe({
-  summary: "simple upload avatar package for meteor",
+  summary: "Simple upload avatar package for Meteor.",
   version: "1.3.0",
-  name: "selaias:avatar-upload",
-  git: "https://github.com/selaias/avatar-upload.git"    
+  name: "matthiaseckhart:avatar-upload",
+  git: "https://github.com/MatthiasEckhart/avatar-upload.git"
 });
 
 var both = ['client', 'server'];
@@ -37,10 +37,4 @@ Package.onUse(function (api) {
   api.add_files([
     'src/server.js',
   ], server);
-});
-
-Package.onTest(function (api) {
-  api.use(['selaias:avatar-upload','accounts-password','tinytest'], both);
-  api.addFiles('tests/client.js', 'client');
-  api.addFiles('tests/server.js', 'server');
 });
