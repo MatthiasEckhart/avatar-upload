@@ -13,7 +13,7 @@ Package.onUse(function (api) {
   api.versionsFrom("METEOR@1.2.0.2");
 
   api.use(['underscore', 'accounts-base', 'accounts-password'], both);
-  api.use(['jquery', 'templating', 'twbs:bootstrap'], client);
+  api.use(['jquery', 'templating', 'twbs:bootstrap@3.3.5'], client);
 
   //add file
   api.addFiles([
